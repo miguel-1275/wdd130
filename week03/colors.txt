@@ -1,0 +1,9 @@
+primary-color: #1C3041
+secondary-color: #0067AA
+accent1-color: #D46B0C
+accent2-color: #AAB9CF
+
+Color palette: https://coolors.co/1c3041-0067aa-d46b0c-aab9cf
+
+heading-font: Sarala
+text-font: Ysabeau Office
