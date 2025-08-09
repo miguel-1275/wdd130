@@ -23,6 +23,17 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -31,6 +42,67 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.history > * {
+  min-width: 0;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.history > :first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 100%;
+}
+
+.gallery > :first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.gallery > * {
+  min-width: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 100%;
 }
 
 .socialmedia a {
@@ -75,4 +147,28 @@ nav, p, section, article {
     border-width: 2px;
     border-color: var(--accent2-color);
     border-radius: 15px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socialmedia a img {
+    width: 24px;
+    height: auto;
+    display: block;
 }
