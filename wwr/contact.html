@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLASH - Contact Us</title>
+    <meta name="author" content="Miguel Arias">
+    <meta name="description" content="SPLASH - Contact Us">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/wwr-logo.png" alt="Rafting Company logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Our contact information</h2>
+        <div class="information">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Adress</th>
+                        <td>Somewere really cool in the US</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone number</th>
+                        <td>+1 (000) 000 000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">E-mail</th>
+                        <td>splashrafting@site.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5562.3691310356835!2d-118.50029841108022!3d34.00782726223633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1755054098836!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <section id="team">
+            <h2>Our team</h2>
+            <div class="team">
+                <figure>
+                    <img src="images/employee1.jpg" alt="James Hetfield">
+                    <figcaption>
+                        <h3>James Hetfield</h3>
+                        <p>Someone very important</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Joan Jett">
+                    <figcaption>
+                        <h3>Joan Jett</h3>
+                        <p>Someone important</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Eddie Van Halen">
+                    <figcaption>
+                        <h3>Eddie Van Halen</h3>
+                        <p>The son of the boss</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Need help? Send us a message!</h2>
+            <form>
+                <fieldset>
+                <legend>Contact Information</legend>
+                    <div class="form-item">
+                        <label for="username">Enter your name:</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-item">
+                        <label for="useremail">Enter your e-mail:</label>
+                        <input type="text" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                <legend>Message</legend>
+                    <p>Message purpose:</p><br>
+                    <div class="form-item options"">
+                        <label for="inquiry">General inquiry</label>
+                        <input type="radio" id="inquiry" name="purpose" value="inquiry">
+                        <label for="reservation">Reservation question</label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="suggestion">Website suggestion</label>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Type your message here:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type here..."></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-item column1">
+                    <label for="subscription">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscription" name="subscription">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 | SPLASH - White Water Rafting | Miguel Arias</p>
+        <nav class="socialmedia">
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="youtube logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram logo">
+            </a>
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

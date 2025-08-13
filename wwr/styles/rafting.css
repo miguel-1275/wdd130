@@ -39,6 +39,11 @@ h1, h2 {
     color: var(--primary-color);
 }
 
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
@@ -65,6 +70,120 @@ video {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.information table {
+  border-collapse: separate;  /* Para poder usar space entre columnas */
+  border-spacing: 30px 10px;      /* 30px de espacio horizontal entre columnas, 0 vertical */
+  width: max-content;          /* Que la tabla no se estire de más */
+}
+
+.information th {
+  text-align: left;            /* Primera columna alineada a la izquierda */
+  padding-right: 10px;         /* Un poco de espacio interno a la derecha para respirar */
+}
+
+.information td {
+  text-align: left;            /* Segunda columna por defecto alineada a la izquierda */
+  padding-left: 10px;          /* Espacio interno a la izquierda */
+}
+
+/* teléfono (segunda columna, fila 2) alineado a la derecha: */
+.information table tr:nth-child(2) td {
+  text-align: right;
+}
+
+iframe {
+    margin-top: 40px;
+    display: block;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;     /* Centra horizontalmente */
+  gap: 40px;                    /* Espacio igual entre elementos */
+  flex-wrap: wrap;              /* Por si en pantallas pequeñas no caben */
+}
+
+figure {
+  text-align: center;           /* Centra el texto debajo de la imagen */
+  max-width: 200px;             /* Opcional: para limitar tamaño */
+}
+
+.team figure img {
+  width: 200px;       /* Todas igual de anchas */
+  height: auto;       /* Mantiene proporción */
+  display: block;     /* Evita espacios raros debajo */
+  border-radius: 50%;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+figcaption h3 {
+    margin: 0;
+}
+
+figcaption p {
+    margin: 2px 0 0;
+}
+
+form {
+  border: 2px dashed #333;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 500px;
+  box-sizing: border-box;
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: var(--secondary-color);
+  font-size: 1.3em;
+}
+
+form p {
+  margin: 0 0 6px 0;
+  text-align: left;
+}
+
+button {
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
 }
 
 .history > :first-child {
